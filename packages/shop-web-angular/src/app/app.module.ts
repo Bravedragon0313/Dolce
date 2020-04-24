@@ -196,7 +196,8 @@ export class AppModule {
 
 		const authLink = setContext((_, { headers }) => {
 			// get the authentication token from local storage if it exists
-			const token = store.token;
+			// const token = store.token;
+			const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTA2ODg3NmUxZWVjNTIwZGY1ZmFmNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU4NzU3NTQ1OH0.a5_lwq3Wc9cY5glpMUCBhi7EqzOO3tOap3a9U8R9nP8'
 			// return the headers to the context so httpLink can read them
 			return {
 				headers: {
